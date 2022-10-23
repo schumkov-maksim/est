@@ -19,3 +19,4 @@ personalMovieDB.count=numberOfFilms;
 personalMovieDB.movies[film1]=bewertung1;
 personalMovieDB.movies[film2]=bewertung2;
 console.log(personalMovieDB);
+
