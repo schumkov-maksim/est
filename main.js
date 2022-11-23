@@ -1,31 +1,28 @@
 // "use strict";
-const numberOfFilms = +prompt("Wei viel Filmen haben Sie schon gesehen");
-console.log(numberOfFilms + typeof(numberOfFilms));
 
-let personalMovieDB={
-    count: numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    private: false    
-};
 
-let film1=prompt("Letzte Film");
-let bewertung1=prompt("Ihre bewertung");
-let film2=prompt("Letzte Film");
-let bewertung2=prompt("Ihre bewertung");
-
-personalMovieDB.count=numberOfFilms;
-personalMovieDB.movies[film1]=bewertung1;
-personalMovieDB.movies[film2]=bewertung2;
-console.log(personalMovieDB);
-
-const hambuge=true;
-const pommes =true;
-
-if (hambuge && pommes) {
-    console.log("Sat")
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
+for (let i=0; i<arr.length; i++){
+    result[i]=arr[i];
 }
-else{
-    console.log("Hunger")
+console.log(result.toString());
+
+
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+for (let i=0; i<data.length;i++){
+    if(typeof(data[i])=="number"){
+        data[i]= data[i]*2;
+    }
+    if(typeof(data[i])=="string"){
+        data[i]= data[i]+ " - done";
+    }
 }
+console.log(data);
+
+
+const data2 = [5, 10, 'Shopping', 20, 'Homework'];
+let result2 = [];
+result2 = data2.reverse();
+console.log(result2);
